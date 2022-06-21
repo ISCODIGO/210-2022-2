@@ -13,6 +13,7 @@ public class Principal {
         System.out.println(Main.PI);
         System.out.println(pkg.Main.EULER);
         
+        // Llamado a una funcion que esta en otro package
         Main.mensaje();
         
         // Clase de la Libreria Estandar de Java
