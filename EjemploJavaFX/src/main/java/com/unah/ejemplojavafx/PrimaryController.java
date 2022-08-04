@@ -56,7 +56,7 @@ public class PrimaryController {
                 .replace("{{DESCRIPCION}}", txtDescripcion.getText());
         
         // Crear el directorio
-        Path newPath = Paths.get(DIRECTORIO);  // En este caso no se usa Path.of ya que no existe la URI
+        Path newPath = Path.of(DIRECTORIO); 
         if (!Files.exists(newPath)) {
             Files.createDirectory(newPath);
         }
